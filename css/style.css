@@ -65,3 +65,31 @@ body .section__lorem img {
   overflow: hidden;
   height: 1vh;
 }
+body .photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .photos .image__mustage {
+  overflow: hidden;
+  height: 5vh;
+  width: 5vh;
+  margin-top: 1.5rem;
+}
+body .photos__p-underline {
+  text-decoration: underline;
+}
+body .photos__woman-glass {
+  width: 100%;
+}
+body .photos__p-bolder {
+  font-weight: 500;
+  margin-bottom: 3rem;
+  padding-top: 0;
+  font-size: x-large;
+  text-align: center;
+  align-self: stretch;
+}
+body .photos__pizza, body .photos__shop {
+  width: 100%;
+}

@@ -19,7 +19,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         height: 15vh;
-        transform: rotate(20deg, -20deg);
+
         img {
             overflow: hidden;
             height: 2.5vh;
@@ -36,6 +36,38 @@ body {
 
         p {
             margin: 1rem;
+        }
+    }
+
+    .media__main {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        img {
+            position: relative;
+            height: 30vh;
+            width: 100%;
+        }
+        &--lorem {
+            color: #16ffbd;
+            position: absolute;
+            font-weight: bolder;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .section__lorem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            margin: 1rem;
+            text-align: center;
+        }
+        img {
+            overflow: hidden;
+            height: 1vh;
         }
     }
 }

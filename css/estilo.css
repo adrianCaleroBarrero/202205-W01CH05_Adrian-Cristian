@@ -1,0 +1,10 @@
+*,
+*::after,
+*::before,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+body{
+    background-color: #16ffbd;
+}

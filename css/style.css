@@ -81,7 +81,7 @@ body .photos__p-underline {
 }
 body .photos__p-bolder {
   font-weight: 300;
-  margin-bottom: 3rem;
+  margin-bottom: 0.2rem;
   margin-top: 0.1rem;
   font-size: large;
   text-align: center;
@@ -90,13 +90,16 @@ body .photos__p-bolder {
 }
 body .photos__pizza, body .photos__shop, body .photos__woman-glass {
   width: 100%;
+  margin-top: 3rem;
 }
 body footer {
   background-color: #080d14;
   color: #16ffbd;
-  height: 60vh;
+  height: 200vh;
+  margin-top: 3rem;
 }
 body footer header {
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,4 +134,27 @@ body footer header nav ul a {
 body footer header nav ul a:hover {
   text-decoration: line-through;
   color: #fb8cab;
+}
+body footer .info-footer {
+  letter-spacing: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: space-around;
+  margin: 0 4rem;
+}
+body footer .info-footer h3 {
+  color: white;
+  font-weight: 300;
+}
+body footer .info-footer__social {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 1rem 0;
+}
+body footer .info-footer__social img {
+  overflow: hidden;
+  height: 8vh;
+  gap: 1rem;
 }

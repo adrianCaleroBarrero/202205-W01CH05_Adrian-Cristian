@@ -61,7 +61,7 @@ body .section__lorem p {
   margin: 1rem;
   text-align: center;
 }
-body .section__lorem img {
+body .section__lorem .cross {
   overflow: hidden;
   height: 1vh;
 }
@@ -90,4 +90,45 @@ body .photos__p-bolder {
 }
 body .photos__pizza, body .photos__shop, body .photos__woman-glass {
   width: 100%;
+}
+body footer {
+  background-color: #080d14;
+  color: #16ffbd;
+  height: 60vh;
+}
+body footer header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+body footer header h2 {
+  font-size: medium;
+  font-weight: 300;
+  letter-spacing: 0.4rem;
+}
+body footer header h2 span {
+  text-decoration: line-through;
+  text-decoration-color: #fb8cab;
+}
+body footer header .cross--blue {
+  height: 1vh;
+}
+body footer header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body footer header nav ul a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.4rem;
+  font-size: large;
+  font-weight: 300;
+}
+body footer header nav ul a:hover {
+  text-decoration: line-through;
+  color: #fb8cab;
 }

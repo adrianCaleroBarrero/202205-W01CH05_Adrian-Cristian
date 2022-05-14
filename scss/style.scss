@@ -84,9 +84,7 @@ body {
         &__p-underline {
             text-decoration: underline;
         }
-        &__woman-glass {
-            width: 100%;
-        }
+
         &__p-bolder {
             font-weight: 500;
             margin-bottom: 3rem;
@@ -97,7 +95,8 @@ body {
         }
 
         &__pizza,
-        &__shop {
+        &__shop,
+        &__woman-glass {
             width: 100%;
         }
     }

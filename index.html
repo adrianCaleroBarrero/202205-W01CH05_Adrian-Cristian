@@ -9,13 +9,29 @@
         <link rel="shortcut icon" href="media/logo32.png" type="image/x-icon" />
     </head>
     <body>
-        <header>
-            <a href="#nav"><img src="media/menu.png" alt="Menu" /></a>
-            <div class="header-logo">
-                <img src="media/media02.svg" alt="Panic Logo" />
+        <header class="menu">
+            <a href="#nav" class="menu__burger"
+                ><img src="media/menu.png" alt="Menu"
+            /></a>
+            <div>
+                <ul class="menu__list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Works</a></li>
+                    <img
+                        class="menu__list-logo"
+                        src="media/media02.svg"
+                        alt="Panic Logo"
+                    />
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
             </div>
-            <p>q u i</p>
+
+            <p class="menu__qui">q u i</p>
         </header>
+        <video controls>
+            <source src="media/mp4.mp4" type="video/mp4" />
+        </video>
         <section class="media__main">
             <img src="media/media03.jpg" alt="pink image" />
             <div class="media__main--lorem">

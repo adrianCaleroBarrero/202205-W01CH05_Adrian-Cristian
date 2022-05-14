@@ -14,72 +14,83 @@ body {
   min-height: 100vh;
   background-color: #16ffbd;
 }
-body header {
+
+.menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 15vh;
 }
-body header img {
+.menu__burger img {
   overflow: hidden;
   height: 2.5vh;
   margin: 1rem;
 }
-body header .header-logo {
+.menu__qui {
+  margin: 1rem;
+}
+.menu__list li {
+  display: none;
+  list-style: none;
+  text-decoration: none;
+}
+.menu__list-logo {
   margin: 0 1rem;
   align-self: center;
-}
-body header .header-logo img {
   overflow: hidden;
   height: 7vh;
 }
-body header p {
-  margin: 1rem;
-}
-body .media__main {
+
+.media__main {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-body .media__main img {
+.media__main img {
   position: relative;
   height: 30vh;
   width: 100%;
 }
-body .media__main--lorem {
+.media__main--lorem {
   color: #16ffbd;
   position: absolute;
   font-weight: bolder;
   margin-bottom: 1rem;
 }
-body .section__lorem {
+
+video {
+  display: none;
+}
+
+.section__lorem {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .section__lorem p {
+.section__lorem p {
   margin: 1rem;
   text-align: center;
 }
-body .section__lorem .cross {
+.section__lorem .cross {
   overflow: hidden;
   height: 1vh;
 }
-body .photos {
+
+.photos {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .photos .image__mustage {
+.photos .image__mustage {
   overflow: hidden;
   height: 5vh;
   width: 5vh;
   margin-top: 1.5rem;
 }
-body .photos__p-underline {
+.photos__p-underline {
   text-decoration: underline;
 }
-body .photos__p-bolder {
+.photos__p-bolder {
   font-weight: 300;
   margin-bottom: 0.2rem;
   margin-top: 0.1rem;
@@ -88,54 +99,55 @@ body .photos__p-bolder {
   align-self: stretch;
   letter-spacing: 0.2rem;
 }
-body .photos__pizza, body .photos__shop, body .photos__woman-glass {
+.photos__pizza, .photos__shop, .photos__woman-glass {
   width: 100%;
   margin-top: 3rem;
 }
-body footer {
+
+footer {
   background-color: #080d14;
   color: #16ffbd;
   height: 200vh;
   margin-top: 3rem;
 }
-body footer header {
+footer header {
   height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
-body footer header h2 {
+footer header h2 {
   font-size: medium;
   font-weight: 300;
   letter-spacing: 0.4rem;
 }
-body footer header h2 span {
+footer header h2 span {
   text-decoration: line-through;
   text-decoration-color: #fb8cab;
 }
-body footer header .cross--blue {
+footer header .cross--blue {
   height: 1vh;
 }
-body footer header nav ul {
+footer header nav ul {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-body footer header nav ul a {
+footer header nav ul a {
   text-decoration: none;
   color: white;
   letter-spacing: 0.4rem;
   font-size: large;
   font-weight: 300;
 }
-body footer header nav ul a:hover {
+footer header nav ul a:hover {
   text-decoration: line-through;
   color: #fb8cab;
 }
-body footer .info-footer {
+footer .info-footer {
   letter-spacing: 0.4rem;
   display: flex;
   flex-direction: column;
@@ -143,18 +155,51 @@ body footer .info-footer {
   align-content: space-around;
   margin: 0 4rem;
 }
-body footer .info-footer h3 {
+footer .info-footer h3 {
   color: white;
   font-weight: 300;
 }
-body footer .info-footer__social {
+footer .info-footer__social {
   display: flex;
   justify-content: space-around;
   width: 100%;
   margin: 1rem 0;
 }
-body footer .info-footer__social img {
+footer .info-footer__social img {
   overflow: hidden;
   height: 8vh;
   gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .menu__burger {
+    display: none;
+  }
+  .menu__qui {
+    display: none;
+  }
+  .menu__list li {
+    display: initial;
+    margin: 0 1.5rem;
+  }
+  .menu__list li a {
+    list-style: none;
+    text-decoration: none;
+    color: #080d14;
+    letter-spacing: 0.2rem;
+    font-size: small;
+  }
+
+  .media__main {
+    display: none;
+  }
+
+  video {
+    display: initial;
+  }
 }

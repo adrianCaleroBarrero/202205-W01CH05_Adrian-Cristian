@@ -19,7 +19,6 @@ body header {
   flex-direction: row;
   justify-content: space-between;
   height: 15vh;
-  transform: rotate(20deg, -20deg);
 }
 body header img {
   overflow: hidden;
@@ -36,4 +35,62 @@ body header .header-logo img {
 }
 body header p {
   margin: 1rem;
-};
+
+}
+body .media__main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+body .media__main img {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+}
+body .media__main--lorem {
+  color: #16ffbd;
+  position: absolute;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+body .section__lorem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .section__lorem p {
+  margin: 1rem;
+  text-align: center;
+}
+body .section__lorem img {
+  overflow: hidden;
+  height: 1vh;
+}
+body .photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .photos .image__mustage {
+  overflow: hidden;
+  height: 5vh;
+  width: 5vh;
+  margin-top: 1.5rem;
+}
+body .photos__p-underline {
+  text-decoration: underline;
+}
+body .photos__woman-glass {
+  width: 100%;
+}
+body .photos__p-bolder {
+  font-weight: 500;
+  margin-bottom: 3rem;
+  padding-top: 0;
+  font-size: x-large;
+  text-align: center;
+  align-self: stretch;
+}
+body .photos__pizza, body .photos__shop {
+  width: 100%;
+}

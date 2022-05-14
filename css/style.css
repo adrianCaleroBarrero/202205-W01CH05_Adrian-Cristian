@@ -35,7 +35,6 @@ body header .header-logo img {
 }
 body header p {
   margin: 1rem;
-
 }
 body .media__main {
   display: flex;
@@ -80,9 +79,6 @@ body .photos .image__mustage {
 body .photos__p-underline {
   text-decoration: underline;
 }
-body .photos__woman-glass {
-  width: 100%;
-}
 body .photos__p-bolder {
   font-weight: 500;
   margin-bottom: 3rem;
@@ -91,6 +87,6 @@ body .photos__p-bolder {
   text-align: center;
   align-self: stretch;
 }
-body .photos__pizza, body .photos__shop {
+body .photos__pizza, body .photos__shop, body .photos__woman-glass {
   width: 100%;
 }

@@ -53,7 +53,6 @@ body {
 
     img {
         position: relative;
-        height: 30vh;
         width: 100%;
     }
     &--lorem {
@@ -80,17 +79,17 @@ video {
         height: 1vh;
     }
 }
+.image__mustage {
+    overflow: hidden;
+    height: 5vh;
+    width: 5vh;
+    margin-top: 1.5rem;
+}
 
 .photos {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    .image__mustage {
-        overflow: hidden;
-        height: 5vh;
-        width: 5vh;
-        margin-top: 1.5rem;
-    }
+
     &__p-underline {
         text-decoration: underline;
     }
@@ -116,11 +115,11 @@ video {
 footer {
     background-color: #080d14;
     color: #16ffbd;
-    height: 200vh;
+    height: 120vh;
     margin-top: 3rem;
 
     header {
-        height: 30vh;
+        height: 17vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -167,8 +166,8 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
-        align-content: space-around;
-        margin: 0 4rem;
+        align-items: center;
+        margin: 0 2rem;
         h3 {
             color: white;
             font-weight: 300;
@@ -177,12 +176,13 @@ footer {
         &__social {
             display: flex;
             justify-content: space-around;
-            width: 100%;
+            width: 20vh;
             margin: 1rem 0;
+            gap: 1.5rem;
             img {
                 overflow: hidden;
-                height: 8vh;
                 gap: 1rem;
+                width: 20vh;
             }
         }
     }
@@ -220,5 +220,67 @@ footer {
 
     video {
         display: initial;
+    }
+
+    .photos {
+        flex-direction: row;
+        width: 100%;
+        &__pizza,
+        &__shop,
+        &__woman-glass {
+            overflow: hidden;
+            width: 100%;
+            margin-top: 1.5rem;
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 60vh;
+        header {
+            height: 6vh;
+            nav {
+                ul {
+                    display: none;
+                }
+            }
+        }
+
+        .responsive__container {
+            display: flex;
+            width: 100%;
+            text-align: left;
+            line-height: 2.5rem;
+            font-size: x-small;
+            div {
+                width: 20vh;
+            }
+            h3,
+            p,
+            section {
+                align-self: stretch;
+                margin: 0;
+                padding: 0;
+            }
+            .social-responsive {
+                flex-grow: 1;
+            }
+
+            &-1 p,
+            &-1 h3 {
+                text-align: left;
+                margin-left: 1.5rem;
+            }
+
+            &-2 p,
+            &-2 h3 {
+                text-align: right;
+                margin-right: 1.5rem;
+            }
+
+            .info-footer__social {
+                margin: 5rem 3rem 0 3rem;
+            }
+        }
     }
 }

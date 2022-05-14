@@ -48,7 +48,6 @@ body {
 }
 .media__main img {
   position: relative;
-  height: 30vh;
   width: 100%;
 }
 .media__main--lorem {
@@ -76,16 +75,16 @@ video {
   height: 1vh;
 }
 
-.photos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.photos .image__mustage {
+.image__mustage {
   overflow: hidden;
   height: 5vh;
   width: 5vh;
   margin-top: 1.5rem;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
 }
 .photos__p-underline {
   text-decoration: underline;
@@ -107,11 +106,11 @@ video {
 footer {
   background-color: #080d14;
   color: #16ffbd;
-  height: 200vh;
+  height: 120vh;
   margin-top: 3rem;
 }
 footer header {
-  height: 30vh;
+  height: 17vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,8 +151,8 @@ footer .info-footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-content: space-around;
-  margin: 0 4rem;
+  align-items: center;
+  margin: 0 2rem;
 }
 footer .info-footer h3 {
   color: white;
@@ -162,13 +161,14 @@ footer .info-footer h3 {
 footer .info-footer__social {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 20vh;
   margin: 1rem 0;
+  gap: 1.5rem;
 }
 footer .info-footer__social img {
   overflow: hidden;
-  height: 8vh;
   gap: 1rem;
+  width: 20vh;
 }
 
 @media (min-width: 600px) {
@@ -201,5 +201,57 @@ footer .info-footer__social img {
 
   video {
     display: initial;
+  }
+
+  .photos {
+    flex-direction: row;
+    width: 100%;
+  }
+  .photos__pizza, .photos__shop, .photos__woman-glass {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  footer {
+    width: 100%;
+    height: 60vh;
+  }
+  footer header {
+    height: 6vh;
+  }
+  footer header nav ul {
+    display: none;
+  }
+  footer .responsive__container {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    line-height: 2.5rem;
+    font-size: x-small;
+  }
+  footer .responsive__container div {
+    width: 20vh;
+  }
+  footer .responsive__container h3,
+footer .responsive__container p,
+footer .responsive__container section {
+    align-self: stretch;
+    margin: 0;
+    padding: 0;
+  }
+  footer .responsive__container .social-responsive {
+    flex-grow: 1;
+  }
+  footer .responsive__container-1 p, footer .responsive__container-1 h3 {
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+  footer .responsive__container-2 p, footer .responsive__container-2 h3 {
+    text-align: right;
+    margin-right: 1.5rem;
+  }
+  footer .responsive__container .info-footer__social {
+    margin: 5rem 3rem 0 3rem;
   }
 }

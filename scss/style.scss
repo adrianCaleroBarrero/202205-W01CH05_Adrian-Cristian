@@ -113,7 +113,11 @@ video {
     }
 
     &__curvature p {
-        transform: rotate(-12deg);
+        transform: rotate(-10deg);
+    }
+
+    &--check {
+        display: none;
     }
 }
 .photos__pizza,
@@ -245,16 +249,42 @@ footer {
         flex-direction: row;
         width: 100%;
         shape-outside: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
-        &__pizza img,
-        &__shop img,
-        &__woman-glass img {
+        &__pizza,
+        &__shop,
+        &__woman-glass {
             overflow: hidden;
             width: 100%;
             margin-top: 1.5rem;
         }
 
+        &__curvature {
+            z-index: 2;
+            position: relative;
+        }
+        // &__pizza:hover,
+        // &__shop:hover,
+        // &__woman-glass:hover {
+        //     filter: brightness(50%);
+        //     z-index: 0;
+        // }
+        &__curvature:hover {
+            filter: brightness(50%);
+            z-index: 0;
+            color: #b9afb1;
+        }
+        &--check {
+            display: initial;
+            position: absolute;
+            left: 40%;
+            bottom: 50%;
+            z-index: 1;
+        }
+
         .align-glass {
             transform: translateY(2.9rem);
+        }
+        .align-pizza {
+            transform: translateY(0.1rem);
         }
 
         .align-shop {
@@ -263,7 +293,6 @@ footer {
 
         &__p-underline:hover {
             color: #b9afb1;
-            // pointer-events: visiblePainted;
         }
     }
 
@@ -314,6 +343,10 @@ footer {
 
             .info-footer__social {
                 margin: 5rem 3rem 0 3rem;
+            }
+
+            .info-footer__social img:hover {
+                filter: grayscale(100%);
             }
         }
     }

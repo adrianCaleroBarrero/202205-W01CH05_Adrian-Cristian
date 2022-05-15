@@ -45,26 +45,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  height: 30vh;
+  background-color: #16ffbd;
 }
 .media__main img {
   position: relative;
   width: 100%;
+  height: 100%;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
 }
 .media__main--lorem {
   color: #16ffbd;
   position: absolute;
   font-weight: bolder;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  transform: rotate(-9deg);
 }
 
 video {
   display: none;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
 }
 
 .section__lorem {
   display: flex;
   flex-direction: column;
   align-items: center;
+  letter-spacing: 0.4rem;
+  background-color: #16ffbd;
 }
 .section__lorem p {
   margin: 1rem;
@@ -87,7 +95,7 @@ video {
   flex-direction: column;
 }
 .photos__p-underline {
-  text-decoration: underline;
+  color: #080d14;
 }
 .photos__p-bolder {
   font-weight: 300;
@@ -98,9 +106,16 @@ video {
   align-self: stretch;
   letter-spacing: 0.2rem;
 }
-.photos__pizza, .photos__shop, .photos__woman-glass {
+.photos__curvature p {
+  transform: rotate(-12deg);
+}
+
+.photos__pizza,
+.photos__shop,
+.photos__woman-glass {
   width: 100%;
   margin-top: 3rem;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
 }
 
 footer {
@@ -108,6 +123,7 @@ footer {
   color: #16ffbd;
   height: 120vh;
   margin-top: 3rem;
+  clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
 }
 footer header {
   height: 17vh;
@@ -115,6 +131,7 @@ footer header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  margin-top: 8rem;
 }
 footer header h2 {
   font-size: medium;
@@ -194,6 +211,9 @@ footer .info-footer__social img {
     letter-spacing: 0.2rem;
     font-size: small;
   }
+  .menu__list li a:hover {
+    color: #b9afb1;
+  }
 
   .media__main {
     display: none;
@@ -206,16 +226,27 @@ footer .info-footer__social img {
   .photos {
     flex-direction: row;
     width: 100%;
+    shape-outside: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
   }
-  .photos__pizza, .photos__shop, .photos__woman-glass {
+  .photos__pizza img, .photos__shop img, .photos__woman-glass img {
     overflow: hidden;
     width: 100%;
     margin-top: 1.5rem;
   }
+  .photos .align-glass {
+    transform: translateY(2.9rem);
+  }
+  .photos .align-shop {
+    transform: translateY(-2.9rem);
+  }
+  .photos__p-underline:hover {
+    color: #b9afb1;
+  }
 
   footer {
     width: 100%;
-    height: 60vh;
+    height: 120vh;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
   }
   footer header {
     height: 6vh;

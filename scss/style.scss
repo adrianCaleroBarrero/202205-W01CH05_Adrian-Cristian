@@ -255,29 +255,25 @@ footer {
             overflow: hidden;
             width: 100%;
             margin-top: 1.5rem;
+            position: relative;
+            z-index: 2;
         }
 
-        &__curvature {
-            z-index: 2;
-            position: relative;
-        }
-        // &__pizza:hover,
-        // &__shop:hover,
-        // &__woman-glass:hover {
-        //     filter: brightness(50%);
-        //     z-index: 0;
-        // }
-        &__curvature:hover {
+        &__pizza:hover,
+        &__shop:hover,
+        &__woman-glass:hover {
             filter: brightness(50%);
-            z-index: 0;
+            z-index: 1;
+        }
+        &__curvature:hover {
             color: #b9afb1;
         }
         &--check {
             display: initial;
             position: absolute;
+            z-index: 1;
             left: 40%;
             bottom: 50%;
-            z-index: 1;
         }
 
         .align-glass {

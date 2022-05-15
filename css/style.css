@@ -235,22 +235,27 @@ footer .info-footer__social img {
     overflow: hidden;
     width: 100%;
     margin-top: 1.5rem;
-  }
-  .photos__curvature {
-    z-index: 2;
+
     position: relative;
+    z-index: 2;
   }
-  .photos__curvature:hover {
+  .photos__pizza:hover, .photos__shop:hover, .photos__woman-glass:hover {
     filter: brightness(50%);
     z-index: 0;
+  }
+  
+  
+  .photos__curvature:hover { 
     color: #b9afb1;
   }
   .photos--check {
     display: initial;
     position: absolute;
+
+    z-index: 1;
     left: 40%;
     bottom: 50%;
-    z-index: 1;
+
   }
   .photos .align-glass {
     transform: translateY(2.9rem);

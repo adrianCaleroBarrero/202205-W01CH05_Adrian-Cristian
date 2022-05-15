@@ -124,17 +124,18 @@ video {
 footer {
   background-color: #080d14;
   color: #16ffbd;
-  height: 120vh;
+  height: 220vh;
   margin-top: 3rem;
   clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
 }
 footer header {
-  height: 17vh;
+  height: 23vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   margin-top: 8rem;
+  margin-bottom: 3rem;
 }
 footer header h2 {
   font-size: medium;
@@ -267,7 +268,7 @@ footer .info-footer__social img {
 
   footer {
     width: 100%;
-    height: 120vh;
+    height: 140vh;
     clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
   }
   footer header {
@@ -282,6 +283,9 @@ footer .info-footer__social img {
     text-align: left;
     line-height: 2.5rem;
     font-size: x-small;
+  }
+  footer .responsive__container .info-footer {
+    margin-top: 3rem;
   }
   footer .responsive__container div {
     width: 20vh;
